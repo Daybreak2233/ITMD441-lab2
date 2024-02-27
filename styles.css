@@ -1,7 +1,12 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-
+	list-style-type: none;
+	display: flex;
+	margin: 0;
+	justify-content: space-between;
+	margin-left: 10px;
+	margin-right: 50px;
 }
 
 /* end Flexbox Part 1 */
@@ -10,23 +15,29 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
 }
 
 #flex-section2 li {
-
+	flex: 1;
+	padding: 5px;
+	font-weight: 600;
+	/* the picture just looks vague, maybe I don't need change anything on font */
 }
 
 #flex-section2 .item1 {
-
+	order: 1;
 }
 
 #flex-section2 .item2 {
-
+	order: 3;
 }
 
 #flex-section2 .item3 {
-
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
@@ -35,10 +46,18 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #flex-section3 .tags ul {
+	display: flex;
+	list-style-type: none;
+	flex-wrap: wrap;
+	padding: 0;
+	/* margin: 10px 0 0 0; */
+
 
 }
 
@@ -48,7 +67,11 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
-
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+	grid-auto-rows: 100px;
+	/* font-weight: bold; */
 }
 
 /* end Grid Part 1 */
@@ -57,11 +80,14 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
-
+	grid-column: 2 / span 3;
+	grid-row: 1 / span 3;
+	z-index: 1;
 }
 
 #grid-section2 .gridboxred {
-
+	grid-column: 1 / span 2;
+	grid-row: 2;
 }
 
 /* end Grid Part 2 */
@@ -70,23 +96,30 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 100px 300px 100px;
+	grid-gap: 10px;
 }
 
 #grid-section3 .box1 {
-
+	grid-column: 1 /-1;
+	grid-row: 1;
 }
 
 #grid-section3 .box2 {
-
+	grid-column: 2;
+	grid-row: 2;
 }
 
 #grid-section3 .box3 {
-
+	grid-column: 1;
+	grid-row: 2;
 }
 
 #grid-section3 .box4 {
-
+	grid-column: 1 / -1;
+	grid-row: 3;
 }
 
 /* end Grid Part 3 */
@@ -100,6 +133,7 @@
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
+	transition: background-color 3s, color 3s;
 
 
 }
@@ -107,7 +141,7 @@
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
+	transition-duration: 0.5s;
 
 }
 

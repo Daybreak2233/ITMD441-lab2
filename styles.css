@@ -24,7 +24,7 @@
 #flex-section2 li {
 	flex: 1;
 	padding: 5px;
-	font-weight: 600;
+	/* font-weight: 600; */
 	/* the picture just looks vague, maybe I don't need change anything on font */
 }
 
@@ -56,9 +56,8 @@
 	list-style-type: none;
 	flex-wrap: wrap;
 	padding: 0;
+	margin: 0;
 	/* margin: 10px 0 0 0; */
-
-
 }
 
 /* end Flexbox Part 3 */
